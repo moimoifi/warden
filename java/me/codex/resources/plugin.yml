@@ -17,3 +17,41 @@ commands:
     description: 'Block Logging'
     usage: 'Usage: /<command> help'
     aliases: logblock
+permissions:
+  warden.*:
+    description: Gives access to all LogBlock commands
+    children:
+      warden.lookup: true
+      warden.rollback: true
+      warden.clearlog: true
+      warden.hide: true
+      warden.tp: true
+      warden.me: true
+      warden.ignoreRestrictions: true
+      warden.spawnTools: true
+      warden.tools.toolblock: true
+      warden.tools.tool: true
+  warden.lookup:
+    description: 'Grants access to /lb lookup commands and allows defining custom tool queries'
+    default: op
+  warden.rollback:
+    description: 'Allows rollback, redo and writing of logfiles'
+    default: op
+  warden.clearlog:
+     description: 'Allows clearing of the logs via /lb clearlog'
+     default: op
+  warden.hide:
+    description: 'Allows hiding players from logging'
+    default: op
+  warden.tp:
+    description: 'Allows the use of /lb tp'
+    default: op
+  warden.me:
+    description: 'Allows seeing of your own stats with /lb me'
+    default: true
+  warden.ignoreRestrictions:
+    description: 'Allows to ignore the rollback restrictions rollback.maxTime and rollback.maxArea'
+    default: op
+  warden.spawnTools:
+    description: 'Allows lookup tools to be spawned'
+    default: true
