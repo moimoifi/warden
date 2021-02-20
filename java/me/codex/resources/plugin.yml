@@ -19,7 +19,7 @@ commands:
     aliases: logblock
 permissions:
   warden.*:
-    description: Gives access to all LogBlock commands
+    description: Gives access to all warden commands
     children:
       warden.lookup: true
       warden.rollback: true
