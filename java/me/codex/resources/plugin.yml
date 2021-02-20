@@ -13,3 +13,7 @@ commands:
     description: Unmute a player
   warden:
     description: Basic plugin commands
+  lb:
+    description: 'LogBlock plugin commands'
+    usage: 'Usage: /<command> help'
+    aliases: [logblock
