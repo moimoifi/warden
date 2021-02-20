@@ -1,4 +1,4 @@
-package de.diddiz.util;
+package me.codex.warden.utils;
 
 import net.md_5.bungee.api.ChatColor;
 
